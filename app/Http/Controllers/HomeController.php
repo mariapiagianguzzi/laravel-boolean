@@ -14,9 +14,10 @@ class HomeController extends Controller
     {
         return view('about');
     }
-    public function blog()
+    public function blog(Post $posts)
     {
-        $posts = Post::all();
+        dd($posts);
+        /* $posts = Post::all(); */
         return view('blog');
     }
 }
