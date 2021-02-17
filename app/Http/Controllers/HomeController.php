@@ -16,6 +16,7 @@ class HomeController extends Controller
     }
     public function blog(Post $posts)
     {
+        $post = Post::all();
         dd($posts);
         /* $posts = Post::all(); */
         return view('blog');
