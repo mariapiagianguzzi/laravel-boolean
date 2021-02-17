@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\post;
 
 class HomeController extends Controller
 {
@@ -16,6 +16,7 @@ class HomeController extends Controller
     }
     public function blog()
     {
+        $posts = Post::all();
         return view('blog');
     }
 }
