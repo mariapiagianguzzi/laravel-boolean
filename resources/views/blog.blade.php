@@ -7,7 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-   
+   @foreach ($post as $posts)
+    <h1>{{$posts->title}}</h1>
+    <p>{{$posts->body}}</p>
+   @endforeach
 
 </body>
 </html>

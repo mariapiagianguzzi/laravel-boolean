@@ -14,11 +14,11 @@ class HomeController extends Controller
     {
         return view('about');
     }
-    public function blog(Post $posts)
+    public function blog()
     {
         $post = Post::all();
-        dd($posts);
+        /* dd($post); */
         /* $posts = Post::all(); */
-        return view('blog');
+        return view('blog', compact ('post'));
     }
 }
